@@ -15,6 +15,7 @@ public class UserTests {
         System.out.println("status Line ==> "+response.statusLine());
         System.out.println(response.header("content-Type"));
         System.out.println("response.header(\"content-Type\") = " + response.header("content-Type"));
-        response.prettyPrint();
+        System.out.println("response.body().jsonPath().getInt(\"data.id\") = " + response.body().jsonPath().getInt("data.id"));
+        //response.prettyPrint();
     }
 }
