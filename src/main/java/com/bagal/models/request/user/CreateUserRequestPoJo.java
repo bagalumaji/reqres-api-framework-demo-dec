@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @Builder
 @AllArgsConstructor
-public class CreateUserPoJo {
+public class CreateUserRequestPoJo {
     private String name;
     private String job;
 }

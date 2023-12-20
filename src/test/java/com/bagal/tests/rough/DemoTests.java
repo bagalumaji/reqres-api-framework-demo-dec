@@ -1,6 +1,6 @@
 package com.bagal.tests.rough;
 
-import com.bagal.models.request.user.CreateUserPoJo;
+import com.bagal.models.request.user.CreateUserRequestPoJo;
 import com.bagal.models.response.user.CreateUserResponsePojo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 public class DemoTests {
     @Test
     public void demoTest() throws JsonProcessingException {
-        CreateUserPoJo userPoJo = CreateUserPoJo.builder().name("sayaji").job("dev").build();
+        CreateUserRequestPoJo userPoJo = CreateUserRequestPoJo.builder().name("sayaji").job("dev").build();
         ObjectMapper mapper = new ObjectMapper();
         String body = mapper.writeValueAsString(userPoJo);
         Response response = given()

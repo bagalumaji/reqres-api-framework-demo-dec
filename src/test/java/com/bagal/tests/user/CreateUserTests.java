@@ -1,6 +1,6 @@
 package com.bagal.tests.user;
 
-import com.bagal.models.request.user.CreateUserPoJo;
+import com.bagal.models.request.user.CreateUserRequestPoJo;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.json.JSONObject;
@@ -87,7 +87,7 @@ public class CreateUserTests {
 
     @Test
     public void createUserDemo5Test(){
-        CreateUserPoJo userPoJo = CreateUserPoJo.builder().name("sayaji").job("dev").build();
+        CreateUserRequestPoJo userPoJo = CreateUserRequestPoJo.builder().name("sayaji").job("dev").build();
         Response response = given()
                 .baseUri(getValue("base.uri"))
                 .basePath(getValue("base.path.user"))
