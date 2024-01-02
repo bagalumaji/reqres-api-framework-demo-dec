@@ -87,7 +87,7 @@ public class CreateUserTests {
 
     @Test
     public void createUserDemo5Test(){
-        CreateUserRequestPoJo userPoJo = CreateUserRequestPoJo.builder().name("sayaji").job("dev").build();
+        CreateUserRequestPoJo userPoJo = CreateUserRequestPoJo.builder().setName("sayaji").setJob("dev").build();
         Response response = given()
                 .baseUri(getValue("base.uri"))
                 .basePath(getValue("base.path.user"))
