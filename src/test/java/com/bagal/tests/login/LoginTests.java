@@ -1,4 +1,6 @@
 package com.bagal.tests.login;
 
-public class LoginTests {
+import com.bagal.basetest.BaseTest;
+
+public class LoginTests extends BaseTest {
 }
