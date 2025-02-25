@@ -12,7 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <testng.version>7.8.0</testng.version>
+        <testng.version>7.11.0</testng.version>
         <restassured.version>5.3.2</restassured.version>
     </properties>
     <dependencies>
